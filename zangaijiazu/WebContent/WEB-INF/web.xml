@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>zangaijiazu</display-name>
+  <servlet>
+    <description>this is j2ee</description>
+    <display-name>this display name</display-name>
+    <servlet-name>user</servlet-name>
+    <servlet-class>zangaijiazuProject.user</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>user</servlet-name>
+    <url-pattern>/servlet/user</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+
+    <servlet-name>articleManager</servlet-name>
+    <servlet-class>zangaijiazuProject.articleManager</servlet-class>
+   
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>articleManager</servlet-name>
+    <url-pattern>/servlet/articleManager</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+
+    <servlet-name>uploadImg</servlet-name>
+    <servlet-class>zangaijiazuProject.uploadImg</servlet-class>
+   
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>uploadImg</servlet-name>
+    <url-pattern>/servlet/uploadImg</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
